@@ -68,6 +68,44 @@ Git 和 SVN
     - 没有很好的分支管理
     - 不适用于开源
 
+<<<<<<< HEAD
+
+
+### 终端和Git命令###
+
+终端
+
+1.查看当前目录大小：du
+
+2.查看文档内容： more file1.txt    /    less file1.txt(在终端中显示)。用open可以用默认工具打开文档
+
+3.复制文件： cp    file1.txt   file2.txt
+
+4.重命名文件： mv     file1.txt   file2.txt
+
+5.文本编辑： nano   file1.txt。用ctrl＋底部提示快捷键操作。ctrl+ X是退出
+
+Git
+
+- Workspace：工作区
+- Index / Stage：暂存区
+- Repository：仓库区（或本地仓库）
+- Remote：远程仓库
+
+1.查看当前Git配置： git  config   --list
+
+2.列出本地分支： git branch
+
+​	远程分支： git branch -r
+
+​	本地分支和远程分支： git branch -a
+
+3.新建分支，停留在当前分支： git  branch [branch-name]??
+4.显示有变更的文件： git status
+
+5.显示当前分支的版本历史：git  log
+
+=======
 ### Git和Github的使用
 
 终端常用命令:
@@ -97,3 +135,4 @@ Git常用命令:
 提交修改: git commit -m '修改的内容'
 
 推送修改: git push
+>>>>>>> 356135fc0ed07a4c85d87dd2d5baf039696f2f7e
