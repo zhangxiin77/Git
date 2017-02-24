@@ -66,7 +66,41 @@ Git 和 SVN
     - 开发人员的习惯
   - 劣势:
     - 没有很好的分支管理
-    - 不适用于开源
+    - 不适用于开源终端和Git命令
+
+  ### 终端和Git命令
+
+  终端
+
+  1.查看当前目录大小：du
+
+  2.查看文档内容： more file1.txt    /    less file1.txt(在终端中显示)。用open可以用默认工具打开文档
+
+  3.复制文件： cp    file1.txt   file2.txt
+
+  4.重命名文件： mv     file1.txt   file2.txt
+
+  5.文本编辑： nano   file1.txt。用ctrl＋底部提示快捷键操作。ctrl+ X是退出
+
+  Git
+
+  - Workspace：工作区
+  - Index / Stage：暂存区
+  - Repository：仓库区（或本地仓库）
+  - Remote：远程仓库
+
+  1.查看当前Git配置： git  config   --list
+
+  2.列出本地分支： git branch
+
+  ​	远程分支： git branch -r
+
+  ​	本地分支和远程分支： git branch -a
+
+  3.新建分支，停留在当前分支： git  branch [branch-name]??
+  4.显示有变更的文件： git status
+
+  5.显示当前分支的版本历史：git  log
 
 ### Git和Github的使用
 
@@ -97,3 +131,48 @@ Git常用命令:
 提交修改: git commit -m '修改的内容'
 
 推送修改: git push
+
+
+
+### 0224新加内容  忽略特殊文件或文件夹
+
+### Git 讲解
+
+" ``` + enter"
+
+```
+git clone 
+
+git add .   <=>   git rm --cached<file>
+git rm --cached<file>  将修改从暂存区移除，和git add . 相对应。
+
+git commit -m "xxx"
+
+git pull
+
+git push
+```
+
+```
+查询git状态：
+git status
+生成diff
+git diff HEAD -- README.md
+```
+
+### 忽略特殊文件或文件夹
+
+```
+需要生成.gitignore 文件，一般来说，不需要自己创建。
+通过 https://github.com/github/gitignore 去下载对应语言的.gitigonre文件。
+例子： 使用Node.js 开发则下载Node.gitignore文件。
+使用时需要将 Node.gitignore 改名为 .gitignore 才会生效
+
+.gitignore
+在该文件中添加忽略规则，可以填入文件名或文件夹名。
+例子： node_modules/
+node_modules 文件夹下的所有文件或文件夹都会别忽略
+```
+
+
+
